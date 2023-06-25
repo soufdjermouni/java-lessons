@@ -1,0 +1,22 @@
+## 3.4 Cases in Which Overriding Is Impossible
+
+3.4.1 Constructors
+Java does not support overriding when it comes to constructors. However, you can use the constructor of a parent class in a child class with the keyword super.
+
+3.4.2 Final Classes and Methods
+The keyword final has a different meaning depending on where you use it.
+
+Should you use it in a class, it means that this class cannot be extended by another class.
+Hence, it would be impossible to override the methods of a final class as you wouldn’t be allowed to even create a class
+that extends this final class. The use-case of this is to prevent anyone that will try to extend a class that you have declared as final.
+
+If you decide to declare a method as final, it means that this method cannot be overridden. Therefore, you wouldn’t be
+able to achieve run-time polymorphism by overriding this method. The use-case of this is to prevent anyone from
+overriding the implementation of a method, as it could lead to unwanted results.
+
+3.4.3 Static Methods
+When it comes to static methods, you cannot override them in a child class. This applies to static methods declared
+either in a class, abstract class, or interface.
+
+However, unlike when using the final keyword you can extend static classes and override their non-static methods
+without any problem.

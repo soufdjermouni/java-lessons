@@ -1,0 +1,11 @@
+
+==
+Some frameworks may require objects with setters or a default constructor. For instance, Hibernate falls
+ into this category. When creating an @Entity, we'll have to use Lombok's annotations or plain Java.
+
+Besides, @Data objects can both extend other classes and be extended. In conclusion, if we need inheritance,
+we should stick to Lombok's solutions.
+
+In this article, we have seen that Lombok and java records are different tools and serve different purposes.
+Furthermore, we discovered that Lombok is more flexible, and it can be used for scenarios where records
+ are limited.
