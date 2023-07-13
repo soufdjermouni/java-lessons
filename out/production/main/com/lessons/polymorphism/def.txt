@@ -1,0 +1,11 @@
+
+Le polymorphisme en Java peut être illustré de plusieurs façons, mais voici un exemple simple qui montre comment une
+ méthode peut être appelée avec différents types d'objets
+
+
+Polymorphism is the ability of programming languages to present the same interface for differing underlying data types. A
+polymorphic type is a type whose operations can also be applied to values of some other type.
+
+Le polymorphisme est la capacité des langages de programmation à présenter la même interface pour différents types de
+données sous-jacentes. UN
+Le type polymorphe est un type dont les opérations peuvent également être appliquées à des valeurs d'un autre type.
