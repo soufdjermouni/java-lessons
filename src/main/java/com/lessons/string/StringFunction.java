@@ -9,6 +9,14 @@ public class StringFunction {
         //spaces.
         System.out.println(str.isBlank()); //true
 
+        String str2 = null;
+        try {
+            System.out.println(str2.isBlank());
+        } catch (java.lang.NullPointerException e) {
+            System.out.println(e.getMessage());
+             //java.lang.NullPointerException
+        }
+
         //strip : like trim
         String str1 = " ici ";
         System.out.println(str1.strip());//"ici" sans les espaces début et fin
