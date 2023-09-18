@@ -27,6 +27,7 @@ public class LazySingleton extends BusinessClass implements Serializable {
 
     /**
      *  How to prevent breaking singleton : Serialisation /deserialisation
+     *  The readResolve method is called during deserialization to return the singleton instance
      *
      */
     private Object readResolve () {

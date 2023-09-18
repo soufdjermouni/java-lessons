@@ -13,6 +13,6 @@ public class ExempleTreeMap {
         t.put(1, 1);
         t.put(3, 2);
 
-        System.out.println(t.values());  //1 3 2
+        System.out.println(t.values());  //[1, 3, 2]
     }
 }

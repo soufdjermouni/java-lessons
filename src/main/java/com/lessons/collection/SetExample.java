@@ -16,7 +16,10 @@ public class SetExample {
         set.add("Toto");
         set.add(null);
         set.add("toto");
-        System.out.println(set.size()); //3
+        set.add(null);
+        set.add("1");
+        System.out.println(set.size()); //4
+        System.out.println(set); //[null, toto, Toto, 1]
     }
 
 }

@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 
 public class KeyTransient {
 
-    public static String fileName = "C:\\messages\\tmp\\transient\\file-transient.txt";
+    public static String fileName = "C:\\messages\\tmp\\file-transient.txt";
     public static void main(String[] args) throws Exception {
 
         Book book = new Book();
@@ -22,7 +22,8 @@ public class KeyTransient {
         Book book1 = deserialize();
 
 
-        //Here we see that bookName has been properly persisted. On the other hand, the copies field has value 0 and the description is null
+        //Here we see that bookName has been properly persisted. On the other hand, the copies field
+        // has value 0 and the description is null
         // – the default values for their respective data types – instead of the original values.
         System.out.println(book1.getBookName());  //Java Reference
         System.out.println(book1.getDescription()); //null

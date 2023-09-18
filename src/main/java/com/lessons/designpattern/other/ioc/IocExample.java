@@ -11,8 +11,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class IocExample {
 
     public static void main(String[] args) {
-
         ApplicationContext app = new AnnotationConfigApplicationContext(ApplicationConfig.class);
-
     }
 }

@@ -10,8 +10,5 @@
         <module name="java-new" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="java-new" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

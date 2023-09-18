@@ -13,6 +13,7 @@ import java.util.Scanner;
  */
 public class Example {
 
+    String variable = "toto";
     public static void main(String[] args) {
 
         Scanner scanner = null;

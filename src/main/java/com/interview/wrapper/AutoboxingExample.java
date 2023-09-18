@@ -11,5 +11,12 @@ public class AutoboxingExample {
         char c = ch;//unboxing
         System.out.println(a);
 
+
+        int x= 4;
+        Integer y = new Integer (5);
+        x=y; //Unboxing
+        y=x; //Autoboxing
+
+
     }
 }

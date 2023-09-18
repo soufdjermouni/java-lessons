@@ -1,0 +1,4 @@
+Exemple :
+On est sur notre site de e-commerce préféré. Au moment du passage en caisse plusieurs options de paiement pour l’article sont disponibles.
+Le pattern Strategy semble adapté à notre besoin !
+

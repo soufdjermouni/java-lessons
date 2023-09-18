@@ -12,5 +12,6 @@ public class HashMapObjectExampleImmutable {
         m.put(o2,2);
 
         System.out.println(m.get(o1)); //2
+        System.out.println(m.size()); //1
     }
 }

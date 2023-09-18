@@ -10,7 +10,7 @@ public class ExampleHashSet {
         s.add(Integer.valueOf(1));
         s.add(Integer.valueOf(2));
 
-        System.out.println(s.size());
+        System.out.println(s.size()); //2
 
 
     }

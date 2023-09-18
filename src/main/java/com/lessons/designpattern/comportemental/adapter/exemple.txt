@@ -1,0 +1,4 @@
+L'ADAPTATEUR (ADAPTER)
+Exemple :
+Une application développée aux états unis retourne la vitesse max d’une voiture en Miles/H. Si on souhaite la même
+application en France il va vouloir retourner la vitesse en Km/H.

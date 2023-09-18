@@ -1,7 +1,6 @@
 # AtomicInteger vs Integer 
 En Java, les opérations atomiques sont vues comme des méthodes que l'on peut exécuter
-sur un champ volatile.  
-
+sur un champ volatile.    
 Le choix entre les deux types se résume sur le besoin d'être en thread safety.   
 - Integer : n'est pas thread safety
 - AtomicInteger  : il est thread safety    
@@ -12,7 +11,7 @@ Le choix entre les deux types se résume sur le besoin d'être en thread safety.
 AtomicInteger classe a de nombreuses méthodes utilitaires qui sont toutes thread-safe.  
 AtomicInteger fonctionne mieux qu'un int synchronisé.
 
-# volatile vs synchronized ?
+# volatile vs synchronized ?    
 Le mot clé **volatile** permet de signifier à la JVM qu’une variable sera modifiée par plusieurs Threads.  
 En déclarant une variable volatile, sa valeur ne sera jamais placée dans le cache local à la Thread courante d’exécution.   
 Chaque lecture et chaque écriture passeront forcément par la mémoire partagée entre les Threads. De fait, l’accès à la 
