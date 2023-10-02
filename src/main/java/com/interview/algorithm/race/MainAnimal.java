@@ -3,8 +3,8 @@ package com.interview.algorithm.race;
 public class MainAnimal {
     public static void main(String[] args) {
 
-        Dog dog = new Dog("Sammy");
-        Dog cat = new Dog("smokey");
+        Animal dog = new Dog("Sammy");
+        Animal cat = new Dog("smokey");
         System.out.println(dog.getName());
         System.out.println(MainAnimal.getAnimalName(dog));
 

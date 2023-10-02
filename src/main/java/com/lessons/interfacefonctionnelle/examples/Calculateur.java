@@ -1,4 +1,4 @@
-package com.lessons.interfacefonctionnelle;
+package com.lessons.interfacefonctionnelle.examples;
 
 @FunctionalInterface
 public interface Calculateur {

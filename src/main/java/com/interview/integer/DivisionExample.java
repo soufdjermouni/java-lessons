@@ -7,6 +7,7 @@ public class DivisionExample {
 
         int i1=5;
         int i2=2;
-        System.out.println(i1/i2);//2
+        int i3 = i1 / i2;
+        System.out.println(i3);//2
     }
 }

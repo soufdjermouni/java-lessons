@@ -4,7 +4,6 @@ import org.springframework.core.convert.converter.Converter;
 
 interface Maths {
     double calculate(int a);
-
     default double sqrt(int a) {
         return Math.sqrt(a);
     }
@@ -24,13 +23,12 @@ public class ExampleMaths {
     }
 
     public void func1(){
-        int num =1;
-       /** Converter<Integer, String> stringConcerter =
+       int num =1;
+       /*Converter<Integer, String> stringConcerter =
                 (from) -> String.valueOf(from+num);//Variable used in lambda expression should be final or effectively final
+
         */
-        num = 3;
-
-
+       num = 3;
     }
 }
 

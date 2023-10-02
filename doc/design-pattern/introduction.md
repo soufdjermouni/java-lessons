@@ -63,7 +63,7 @@ Plutôt que de créer un objet de A à Z c'est à dire en appelant un constructe
 attributs, ce patron permet de créer un nouvel objet par recopie d'un objet existant. 
 
 
-# Les patrons Structurels 
+# Les patrons Structurels  
 ## LE DÉCORATEUR (DECORATOR)
 Problématique :    
 Imaginons que l’on souhaite ajouter un ou plusieurs comportements à une classe existante. Le plus simple est d’ajouter 

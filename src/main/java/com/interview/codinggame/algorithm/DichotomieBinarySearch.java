@@ -7,31 +7,79 @@ public class DichotomieBinarySearch {
     public static void main(String[] args) {
         int[] arr = new int[]{2,4,5,7,3};
         Arrays.sort(arr);
-        System.out.println(binarySearch(arr,3));
+        System.out.println("binarySearch = " +binarySearch(arr,3));
 
-        binarySearchV2(arr,0,arr.length-1,3) ;
+        System.out.println("binarySearchV2 = "+binarySearchV2(arr,3)) ;
+
 
         int[] ints = {-9, 14, 37, 102};
-        System.out.println(exists(ints, 102)); // true
+        System.out.println("exists= "+exists(ints, 102)); // true
         System.out.println(exists(ints, 36)); // false
+        System.out.println(exists(ints, -9)); // true
+        System.out.println("existsApiJ2SE= "+existsApiJ2SE(ints, 102)); // true
+        int[] emptyArray = {};
+        System.out.println(exists(emptyArray, 36)); // false
+        System.out.println(binarySearchV2(ints, 102)); // true
+
     }
 
-    public static void binarySearchV2(int tab[], int f, int l, int val){
+    static boolean existsApiJ2SE(int[] ints, int k) {
+
+        int result = Arrays.binarySearch(ints,k);
+        if(result<0) {
+            return false;
+        } else {
+            return true;
+        }
+
+    }
+
+    static boolean existsApiJ2SEDetails (int[] ints, int k) {
+
+        //premeir element
+        int f=0;
+        //dernier element
+        int l = ints.length-1;
         int mid = (f + l)/2;
         while(f <= l){
-            if (tab[mid] < val){
+            if (ints[mid] < k){
                 f = mid + 1;
-            }else if(tab[mid] == val){
-                System.out.println("L'élément se trouve à l'index: " + mid);
-                break;
+            }else if(ints[mid] == k){
+                return true;
             }else{
                 l = mid - 1;
             }
             mid = (f + l)/2;
         }
         if (f > l){
-            System.out.println("L'élément n'existe pas!");
+            return false;
         }
+        return false;
+    }
+
+
+
+    public static boolean binarySearchV2(int [] tab , int val){
+
+        //premeir element
+        int f=0;
+        //dernier element
+        int l = tab.length-1;
+        int mid = (f + l)/2;
+        while(f <= l){
+            if (tab[mid] < val){
+                f = mid + 1;
+            }else if(tab[mid] == val){
+                return true;
+            }else{
+                l = mid - 1;
+            }
+            mid = (f + l)/2;
+        }
+        if (f > l){
+            return false;
+        }
+        return false;
     }
 
     public static int binarySearch(int[] arr, int target){
@@ -51,9 +99,10 @@ public class DichotomieBinarySearch {
     }
 
     static boolean exists(int[] ints, int k) {
+
         boolean result = false;
         int left =0;
-        int right = ints.length;
+        int right = ints.length -1;
         while(left<=right) {
             int medium = (left+right)/2;
             if (ints[medium] == k) {

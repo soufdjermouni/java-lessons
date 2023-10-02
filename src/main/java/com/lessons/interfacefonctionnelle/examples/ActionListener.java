@@ -1,6 +1,4 @@
-package com.lessons.interfacefonctionnelle.ex2;
-
-import java.awt.event.ActionEvent;
+package com.lessons.interfacefonctionnelle.examples;
 
 @FunctionalInterface
 public interface ActionListener {
