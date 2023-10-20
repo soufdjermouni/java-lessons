@@ -22,7 +22,7 @@ public class LinkedListClone {
         sec_list = (LinkedList) list.clone();
         System.out.println("Second LinkedList is:" + sec_list);
 
-        System.out.println("First LinkedList afterupdate:" + list);
-        System.out.println("Second LinkedList afterupdate is:" + sec_list);
+        System.out.println("First LinkedList afterupdate:" + list.toString());
+        System.out.println("Second LinkedList afterupdate is:" + sec_list.toString());
     }
 }

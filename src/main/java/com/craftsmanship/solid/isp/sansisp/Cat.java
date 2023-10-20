@@ -1,0 +1,18 @@
+package com.craftsmanship.solid.isp.sansisp;
+
+public class Cat implements Animal {
+    @Override
+    public void makeSound() {
+
+    }
+
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public void fly() {
+
+    }
+}
